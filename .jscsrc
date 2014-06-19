@@ -1,0 +1,36 @@
+{ "excludeFiles":
+  [ "**/node_modules/**"
+  , "coverage"
+  , "data"
+  , "admin/public/js/app/lib/vendor"
+  , "admin/public/js/build"
+  , "admin/public/js/lib/modernizr-2.6.2.min.js"
+  , "admin/public/js/lib/jquery-1.9.1.js"
+  , "site/public/js/build"
+  , "site/public/js/lib/vendor"
+  , "site/public/js/app/lib/vendor"
+  ]
+, "requireLineFeedAtFileEnd": true
+, "disallowMultipleLineBreaks": true
+, "requireMultipleVarDecl": true
+, "disallowEmptyBlocks": true
+, "disallowSpaceAfterObjectKeys": true
+, "disallowCommaBeforeLineBreak": true
+, "disallowTrailingWhitespace": true
+, "requireCapitalizedConstructors": true
+, "requireSpacesInsideObjectBrackets": "all"
+, "requireSpacesInsideArrayBrackets": "all"
+, "validateLineBreaks": "LF"
+, "requireSpaceBeforeBinaryOperators": [ "+", "-", "/", "*", "=", "==", "===", "!=", "!==" ]
+, "requireSpaceAfterBinaryOperators": [ "+", "-", "/", "*", "=", "==", "===", "!=", "!==" ]
+, "requireSpaceAfterKeywords": [ "if", "else", "for", "while", "do", "switch", "try", "catch" ]
+, "requireSpaceBeforeBinaryOperators": true
+, "requireSpaceBeforePostfixUnaryOperators": true
+, "requireSpacesInConditionalExpression": true
+, "disallowSpaceAfterPrefixUnaryOperators": [ "++", "--", "+", "-", "~", "!" ]
+, "disallowSpaceBeforePostfixUnaryOperators": [ "++", "--" ]
+, "requireSpaceBeforeBinaryOperators": [ "+", "-", "/", "*", "=", "==", "===", "!=", "!==" ]
+, "requireSpaceAfterBinaryOperators": [ "+", "-", "/", "*", "=", "==", "===", "!=", "!==" ]
+, "disallowKeywordsOnNewLine": [ "else" ]
+, "requireSpacesInFunctionExpression": { "beforeOpeningCurlyBrace": true }
+}
