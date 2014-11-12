@@ -3,8 +3,7 @@
   "description": "Ensure that during shutdown express returns correctly with a 503",
   "version": "0.0.1",
   "dependencies": {
-    "lodash.assign": "^2.4.1",
-    "rewire": "^2.0.1"
+    "lodash.assign": "^2.4.1"
   },
   "scripts": {
     "lint": "./node_modules/.bin/jshint .",
@@ -20,6 +19,7 @@
   "author": "Paul Serby <paul@serby.net>",
   "license": "ISC",
   "devDependencies": {
+    "rewire": "^2.0.1",
     "istanbul": "^0.2.7",
     "jscs": "^1.4.5",
     "jshint": "^2.5.0",
