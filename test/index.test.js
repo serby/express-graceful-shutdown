@@ -37,4 +37,18 @@ describe('express-graceful-shutdown', function () {
     middleware(null, stubResponse)
   })
 
+  it('should shut down immediately when NODE_ENV is not set', function (done) {
+
+    var gracefulShutdown
+    createExpressGracefulShutdown.__set__('process'
+      , { env: {}
+        , exit: function () { done() }
+        , on: function (name, fn) { gracefulShutdown = fn }
+        })
+
+    createExpressGracefulShutdown({}, { logger: logger } )
+    gracefulShutdown()
+
+  })
+
 })
