@@ -1,7 +1,7 @@
 {
   "name": "express-graceful-shutdown",
   "description": "Ensure that during shutdown express returns correctly with a 503",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "lodash.assign": "^2.4.1"
   },
