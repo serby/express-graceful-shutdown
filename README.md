@@ -10,6 +10,11 @@ Ensure that during shutdown express returns correctly with a 503
 npm install express-graceful-shutdown --save
 ```
 
+## Options
+
+* `logger`: a logger that provides `info`, `warn`, and `error` functions for recording graceful shutdown. Default: `console`.
+* `forceTimeout`: number of milliseconds to wait for `server.close()` to complete before calling `process.exit(1)`. Default: `30000`.
+
 ## Usage
 
 ```js
