@@ -16,8 +16,16 @@ npm install express-graceful-shutdown --save
 var express = require('express')
   , app = express()
   , createGracefulShutdownMiddleware = require('express-graceful-shutdown')
+  , http = require('http')
+  , server = http.createServer(app)
 
-app.use(createGracefulShutdownMiddleware)
+app.use(createGracefulShutdownMiddleware(server, { forceTimeout: 30000 }))
+
+app.get('/', function (req, res) {
+    res.json({ foo: 'bar' })
+})
+
+server.listen(3000)
 ```
 
 ## Credits
