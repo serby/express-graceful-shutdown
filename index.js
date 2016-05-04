@@ -17,6 +17,7 @@ function createMiddleware(server, opts) {
     // Don't bother with graceful shutdown on development to speed up round trip
     if (!process.env.NODE_ENV) return process.exit(1)
 
+    if (shuttingDown) return
     shuttingDown = true
     options.logger.warn('Received kill signal (SIGTERM), shutting down')
 
