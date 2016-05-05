@@ -24,9 +24,10 @@ describe('express-graceful-shutdown', function () {
 
     var stubServer = { close: noop }
       , stubResponse =
-      { send: function (code) {
+      { status: function (code) {
           assert.equal(code, 503)
           done()
+          return { send: noop }
         }
         , set: noop
       }
