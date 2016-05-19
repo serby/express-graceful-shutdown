@@ -3,14 +3,14 @@
   "description": "Ensure that during shutdown express returns correctly with a 503",
   "version": "0.0.2",
   "dependencies": {
-    "lodash.assign": "^2.4.1"
+    "lodash.assign": "^4.0.9"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/jshint .",
-    "checkStyle": "./node_modules/.bin/jscs .",
+    "lint": "jshint .",
+    "checkStyle": "jscs -r unix .",
     "pretest": "npm run-script lint && npm run-script checkStyle",
-    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha test",
-    "posttest": "./node_modules/.bin/istanbul check-coverage && rm -rf coverage",
+    "test": "istanbul cover _mocha test",
+    "posttest": "istanbul check-coverage && rm -rf coverage",
     "prepublish": "npm test && npm prune"
   },
   "publishConfig": {
@@ -19,12 +19,12 @@
   "author": "Paul Serby <paul@serby.net>",
   "license": "ISC",
   "devDependencies": {
-    "rewire": "^2.0.1",
-    "istanbul": "^0.2.7",
-    "jscs": "^1.4.5",
-    "jshint": "^2.5.0",
+    "istanbul": "^0.4.3",
+    "jscs": "^3.0.3",
+    "jshint": "^2.9.2",
     "mc-logger": "0.0.0",
-    "mocha": "^1.18.2"
+    "mocha": "^2.4.5",
+    "rewire": "^2.5.1"
   },
   "repository": {
     "type": "git",

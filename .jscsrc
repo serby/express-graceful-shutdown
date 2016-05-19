@@ -6,16 +6,16 @@
   , "admin/public/js/build"
   , "admin/public/js/lib/modernizr-2.6.2.min.js"
   , "admin/public/js/lib/jquery-1.9.1.js"
+  , "admin/public/js/lib/chart.js"
   , "site/public/js/build"
   , "site/public/js/lib/vendor"
   , "site/public/js/app/lib/vendor"
+  , "support/database"
   ]
 , "requireLineFeedAtFileEnd": true
 , "disallowMultipleLineBreaks": true
-, "requireMultipleVarDecl": true
 , "disallowEmptyBlocks": true
 , "disallowSpaceAfterObjectKeys": true
-, "disallowCommaBeforeLineBreak": true
 , "disallowTrailingWhitespace": true
 , "requireCapitalizedConstructors": true
 , "requireSpacesInsideObjectBrackets": "all"
@@ -24,9 +24,6 @@
 , "requireSpaceBeforeBinaryOperators": [ "+", "-", "/", "*", "=", "==", "===", "!=", "!==" ]
 , "requireSpaceAfterBinaryOperators": [ "+", "-", "/", "*", "=", "==", "===", "!=", "!==" ]
 , "requireSpaceAfterKeywords": [ "if", "else", "for", "while", "do", "switch", "try", "catch" ]
-, "requireSpaceBeforeBinaryOperators": true
-, "requireSpaceBeforePostfixUnaryOperators": true
-, "requireSpacesInConditionalExpression": true
 , "disallowSpaceAfterPrefixUnaryOperators": [ "++", "--", "+", "-", "~", "!" ]
 , "disallowSpaceBeforePostfixUnaryOperators": [ "++", "--" ]
 , "requireSpaceBeforeBinaryOperators": [ "+", "-", "/", "*", "=", "==", "===", "!=", "!==" ]
