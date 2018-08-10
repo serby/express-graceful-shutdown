@@ -1,13 +1,9 @@
-var extend = require('lodash.assign')
-
-module.exports = createMiddleware
-
 function createMiddleware(server, opts) {
 
   var shuttingDown = false
-    , options = extend(
+    , options =
       { logger: console
-      , forceTimeout: 30000 }, opts)
+      , forceTimeout: 30000, ...opts }
 
   // Graceful shutdown taken from: http://blog.argteam.com/
   process.on('SIGTERM', gracefulExit)
@@ -42,3 +38,5 @@ function createMiddleware(server, opts) {
   return middleware
 
 }
+
+module.exports = createMiddleware

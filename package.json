@@ -2,19 +2,16 @@
   "name": "express-graceful-shutdown",
   "description": "Ensure that during shutdown express returns correctly with a 503",
   "version": "0.0.3",
-  "dependencies": {
-    "lodash.assign": "^4.0.9"
-  },
+  "dependencies": {},
   "scripts": {
     "lint": "jshint .",
     "checkStyle": "jscs -r unix .",
     "pretest": "npm run-script lint && npm run-script checkStyle",
     "test": "istanbul cover _mocha test",
-    "posttest": "istanbul check-coverage && rm -rf coverage",
-    "prepublish": "npm test && npm prune"
+    "posttest": "istanbul check-coverage && rm -rf coverage"
   },
-  "publishConfig": {
-    "registry": "http://registry.npmjs.org"
+  "engines": {
+    "node": ">=9.7.0"
   },
   "author": "Paul Serby <paul@serby.net>",
   "license": "ISC",
