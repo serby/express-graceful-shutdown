@@ -24,7 +24,7 @@ function createMiddleware(server, opts) {
     setTimeout(function () {
       options.logger.error('Could not close connections in time, forcefully shutting down')
       process.exit(1)
-    }, options.forceTimeout)
+    }, options.forceTimeout).unref()
 
     server.close(function () {
       options.logger.info('Closed out remaining connections.')
