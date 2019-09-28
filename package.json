@@ -4,23 +4,26 @@
   "version": "1.0.0",
   "dependencies": {},
   "scripts": {
-    "lint": "jshint .",
-    "checkStyle": "jscs -r unix .",
-    "pretest": "npm run-script lint && npm run-script checkStyle",
-    "test": "istanbul cover _mocha test",
-    "posttest": "istanbul check-coverage && rm -rf coverage"
+    "lint": "eslint --cache --ext '.js,.jsx' -f unix .",
+    "prettier": "prettier --write --ignore-path .eslintignore './**/*.js*'",
+    "test": "nyc mocha"
   },
   "engines": {
     "node": ">=9.7.0"
   },
+  "files": [
+    "./index.js"
+  ],
   "author": "Paul Serby <paul@serby.net>",
   "license": "ISC",
   "devDependencies": {
-    "istanbul": "^0.4.3",
-    "jscs": "^3.0.3",
-    "jshint": "^2.9.2",
+    "eslint": "^6.4.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
     "mc-logger": "0.0.0",
     "mocha": "^2.4.5",
+    "nyc": "^14.1.1",
+    "prettier": "^1.18.2",
     "rewire": "^2.5.1"
   },
   "repository": {

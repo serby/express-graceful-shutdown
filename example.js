@@ -1,8 +1,8 @@
-var express = require('express')
-  , app = express()
-  , createGracefulShutdownMiddleware = require('./index.js')
-  , http = require('http')
-  , server = http.createServer(app)
+var express = require('express'),
+  app = express(),
+  createGracefulShutdownMiddleware = require('./index.js'),
+  http = require('http'),
+  server = http.createServer(app)
 
 app.use(createGracefulShutdownMiddleware(server, { forceTimeout: 10000 }))
 
