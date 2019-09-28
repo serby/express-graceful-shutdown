@@ -1,7 +1,7 @@
 {
   "name": "express-graceful-shutdown",
   "description": "Ensure that during shutdown express returns correctly with a 503",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "dependencies": {},
   "scripts": {
     "lint": "eslint --cache --ext '.js,.jsx' -f unix .",
