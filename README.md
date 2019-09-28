@@ -2,7 +2,7 @@
 
 Ensure that during shutdown express returns correctly with a 503
 
-[![build status](https://secure.travis-ci.org/serby/express-graceful-shutdown.png)](http://travis-ci.org/serby/express-graceful-shutdown)
+[![build status](https://secure.travis-ci.org/serby/express-graceful-shutdown.png)](http://travis-ci.org/serby/express-graceful-shutdown) [![Greenkeeper badge](https://badges.greenkeeper.io/serby/express-graceful-shutdown.svg)](https://greenkeeper.io/)
 
 ## Installation
 
