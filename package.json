@@ -1,12 +1,15 @@
 {
   "name": "express-graceful-shutdown",
   "description": "Ensure that during shutdown express returns correctly with a 503",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "dependencies": {},
   "scripts": {
     "lint": "eslint --cache --ext '.js,.jsx' -f unix .",
     "prettier": "prettier --write --ignore-path .eslintignore './**/*.js*'",
-    "test": "nyc mocha"
+    "pretest": "yarn lint",
+    "test": "nyc mocha",
+    "posttest": "rm -rf .nyc_output",
+    "release": "standard-version"
   },
   "engines": {
     "node": ">=9.7.0"
@@ -24,7 +27,8 @@
     "mocha": "^2.4.5",
     "nyc": "^14.1.1",
     "prettier": "^1.18.2",
-    "rewire": "^2.5.1"
+    "rewire": "^2.5.1",
+    "standard-version": "^7.0.0"
   },
   "repository": {
     "type": "git",
