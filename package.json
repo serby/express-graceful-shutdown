@@ -15,7 +15,7 @@
     "node": ">=9.7.0"
   },
   "files": [
-    "./index.js"
+    "index.js"
   ],
   "author": "Paul Serby <paul@serby.net>",
   "license": "ISC",
