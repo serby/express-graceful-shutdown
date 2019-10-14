@@ -14,8 +14,11 @@
   "engines": {
     "node": ">=9.7.0"
   },
+  "main": "index.js",
+  "types": "index.d.ts",
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "author": "Paul Serby <paul@serby.net>",
   "license": "ISC",
